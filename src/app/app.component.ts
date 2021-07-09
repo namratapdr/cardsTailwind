@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cardsTailwind';
+  posts=[
+    {
+      title:'Neat Tree',
+      imageUrl:'assets/tree.jpeg',
+      hashtag:'tree',
+      
+    },
+    {
+      title:'Mountain',
+      imageUrl:'assets/mountain.jpeg',
+      hashtag:'mountain',
+      
+    },
+    {
+      title:'Biking!',
+      imageUrl:'assets/biking.jpeg',
+      hashtag:'biking',
+    },
+  
+    
+  ]
 }

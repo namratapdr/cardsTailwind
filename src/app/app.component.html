@@ -1,8 +1,45 @@
-<div class="container bg-red-200 h-60">
-  <button class="btn btn-blue">
-    Hello World
-  </button>
-  <button class="btn mx-4 bg-red-400">
-    second button
-  </button>
+<div class="card-section px-8">
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <!--Setting up INPUT BINDING (like props in react)-->
+    <!--
+      We put the data in parent class component, then send them using property binding to the child component
+      Then in our child component we import Input decorator and basically tell the component to expect some 
+      specific input from the parent class
+
+      For example:
+      @Input() title="";
+
+      Then in the child component.html we put the data we get from the parent class as {{interpolation}}
+      {{title}}
+    -->
+     <!--THE ANGULAR WAY
+          ngFor is a structural derivative
+          which loops through posts to make a post and then we bind those properties to the child component
+    -->
+     <app-card
+     *ngFor="let post of posts"
+
+      [title]="post.title"
+      [imageUrl]="post.imageUrl" 
+      [hashtag]="post.hashtag"
+      ></app-card>
+
+
+    <!--THE REACT WAY-->
+    <!--app-card
+      [title]="posts[0].title"
+      [imageUrl]="posts[0].imageUrl" 
+      [hashtag]="posts[0].hashtag"
+      ></app-card>
+    <app-card
+    [title]="posts[1].title"
+    [imageUrl]="posts[1].imageUrl" 
+    [hashtag]="posts[1].hashtag"
+    ></app-card>
+    <app-card
+    [title]="posts[2].title"
+    [imageUrl]="posts[2].imageUrl" 
+    [hashtag]="posts[2].hashtag"
+    ></app-card-->
+  </div>
 </div>
