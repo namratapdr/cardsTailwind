@@ -3,28 +3,29 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  posts=[
+  posts = [
     {
-      title:'Neat Tree',
-      imageUrl:'assets/tree.jpeg',
-      hashtag:'tree',
-      
+      title: 'Neat Tree',
+      imageUrl: 'assets/tree.jpeg',
+      hashtag: 'tree',
     },
     {
-      title:'Mountain',
-      imageUrl:'assets/mountain.jpeg',
-      hashtag:'mountain',
-      
+      title: 'Mountain',
+      imageUrl: 'assets/mountain.jpeg',
+      hashtag: 'mountain',
     },
     {
-      title:'Biking!',
-      imageUrl:'assets/biking.jpeg',
-      hashtag:'biking',
+      title: 'Biking!',
+      imageUrl: 'assets/biking.jpeg',
+      hashtag: 'biking',
     },
-  
-    
-  ]
+    {
+      title: 'Writing Scriptures for Feeble Machines',
+      imageUrl: 'assets/coding.png',
+      hashtag: 'coding',
+    },
+  ];
 }
